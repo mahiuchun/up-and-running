@@ -1,0 +1,11 @@
+<center>
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link | prepend:site.baseurl }}">{{ item.name }}</a>
+  {% endfor %}
+  {% for item in site.beos %}
+    <a href="{{ item.url | prepend:site.baseurl }}">{{ item.name }}</a>
+  {% endfor %}
+  {% for item in site.macppc %}
+    <a href="{{ item.url | prepend:site.baseurl }}">{{ item.name }}</a>
+  {% endfor %}  
+</center>  
